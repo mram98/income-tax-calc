@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Common Deductions page
+    </title>
+    <script src="script/commdedc.js"></script>
+    <script src="script/main.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src = "http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    
+
+    
+</head>
+<body onload="clickCounter()">
+    <div class="jumbotron text-center">
+
+        <h2>Common Deductions Page</h2>
+        <p>This page is index of Common Deductions.</p>
+        <p>Please fill the form carefully</p>
+
+    </div>
+    <div class="container">
+        <a href="../index.html"> <button class="btn btn-warning">Go Back</button></a>
+        <br>
+        <br>
+        <a href="../taxdedc.html"> <button class="btn btn-danger">Skip</button></a>
+        <p>* Please don't <mark>reload</mark> or <mark>back</mark> page .</p>
+        <p>* Please click Blue colored button before going to next page. To ensure your data is saved.</p>
+        <h2>Your Progress </h2>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width:50%">
+                50% Complete
+            </div>
+        </div>
+    </div>
+    <div class="container">
+
+<!-- <p>After completed . <a href="../taxdedc.html">Click here</a></p> -->
+
+<p id="d1"></p>
+
+<form name="form1" method="POST" action="../taxdedc.html" onsubmit="return chekinfo()">
+    <h3>fill the details of Eligibility.</h3>
+    <br>
+    <div class="panel panel-default">
+        <div class="panel-body">
+    <h4>1 Employee’s share of PF contribution
+    <input type="checkbox" id="eghyc_1" value="0"  onclick="clicked(eghyc_1, eghyc_1no)">
+    <div id ="eghyc_1no" style="display:none">
+    Interval
+        <select id="eghyc_1intr">
+          <option value="12">Monthly</option>
+          <option value="4">Quaterly</option>
+          <option value="2">Half Yearly</option>
+          <option value="1">Anually</option>
+        </select>
+    Amount<input type="text" id="eghyc_1amt">
+    <button type="button" onclick="anualize(eghyc_1amt, eghyc_1intr), eghyc_1re()">Calculate Yearly</button>
+    <h1 id="eghyc_1stot"></h1>    
+    </div></h4>
+            
+  </div>
+  </div>
+    <br>
+    <br>
+    <div class="panel panel-default">
+        <div class="panel-body">
+    <h4> 2     National Saving Certificates
+    <input type="checkbox" id="eghyc_2" value="0"  onclick="clicked(eghyc_2, eghyc_2no)">
+    <div id ="eghyc_2no" style="display:none">
+    Interval
+        <select id="eghyc_2intr">
+           <option value="12">Monthly</option>
+          <option value="4">Quaterly</option>
+          <option value="2">Half Yearly</option>
+          <option value="1">Anually</option>
+        </select>
+    Amount<input type="text" id="eghyc_2amt">
+    <button type="button" onclick="anualize(eghyc_2amt, eghyc_2intr), eghyc_2re()">Calculate Yearly</button>
+    <h1 id="eghyc_2stot"></h1>    
+    </div></h4>
+            
+  </div>
+  </div>
+    <br>    <br>
+    <div class="panel panel-default">
+        <div class="panel-body">
+    <h4> 
+    3     Life Insurance Premium payment
+    <input type="checkbox" id="eghyc_3" value="0"  onclick="clicked(eghyc_3, eghyc_3no)">
+    <div id ="eghyc_3no" style="display:none">
+    Interval
+        <select id="eghyc_3intr">
+          <option value="12">Monthly</option>
+          <option value="4">Quaterly</option>
+          <option value="2">Half Yearly</option>
+          <option value="1">Anually</option>
+        </select>
+    Amount<input type="text" id="eghyc_3amt">
+    <button type="button" onclick="anualize(eghyc_3amt, eghyc_3intr), eghyc_3re()">Calculate Yearly</button>
+    <h1 id="eghyc_3stot"></h1>    
+    </div></h4>
+            
+  </div>
+  </div>
+    <br>    <br>
+    <div class="panel panel-default">
+        <div class="panel-body">
+    <h4> 
+    4     Children’s Tuition Fee
+    <input type="checkbox" id="eghyc_4" value="0"  onclick="clicked(eghyc_4, eghyc_4no)">
+    <div id ="eghyc_4no" style="display:none">
+    Interval
+        <select id="eghyc_4intr">
+          <option value="12">Monthly</option>
+          <option value="4">Quaterly</option>
+          <option value="2">Half Yearly</option>
+          <option value="1">Anually</option>
+        </select>
+    Amount<input type="text" id="eghyc_4amt">
+    <button type="button" onclick="anualize(eghyc_4amt, eghyc_4intr), eghyc_4re()">Calculate Yearly</button>
+    <h1 id="eghyc_4stot"></h1>    
+    </div></h4>
+            
+  </div>
+  </div>
+    <br>    <br>
+    <div class="panel panel-default">
+        <div class="panel-body">
+    <h4> 
+    5     Principal Repayment of home loan
+    <input type="checkbox" id="eghyc_5" value="0"  onclick="clicked(eghyc_5, eghyc_5no)">
+    <div id ="eghyc_5no" style="display:none">
+    Interval
+        <select id="eghyc_5intr">
+          <option value="12">Monthly</option>
+          <option value="4">Quaterly</option>
+          <option value="2">Half Yearly</option>
+          <option value="1">Anually</option>
+        </select>
+    Amount<input type="text" id="eghyc_5amt">
+    <button type="button" onclick="anualize(eghyc_5amt, eghyc_5intr), eghyc_5re()">Calculate Yearly</button>
+    <h1 id="eghyc_5stot"></h1>    
+    </div></h4>
+            
+  </div>
+  </div>
+    <br>    <br>
+    <div class="panel panel-default">
+        <div class="panel-body">
+    <h4> 
+    6     Investment in Sukanya Samridhi Account
+    <input type="checkbox" id="eghyc_6" value="0"  onclick="clicked(eghyc_6, eghyc_6no)">
+    <div id ="eghyc_6no" style="display:none">
+    Interval
+        <select id="eghyc_6intr">
+          <option value="12">Monthly</option>
+          <option value="4">Quaterly</option>
+          <option value="2">Half Yearly</option>
+          <option value="1">Anually</option>
+        </select>
+    Amount<input type="text" id="eghyc_6amt">
+    <button type="button" onclick="anualize(eghyc_6amt, eghyc_6intr), eghyc_6re()">Calculate Yearly</button>
+    <h1 id="eghyc_6stot"></h1>    
+    </div></h4>
+            
+  </div>
+  </div>
+    <br>    <br>
+    <div class="panel panel-default">
+        <div class="panel-body">
+    <h4> 
+    7     United Linked Insurance Plan Scheme
+    <input type="checkbox" id="eghyc_7" value="0"  onclick="clicked(eghyc_7, eghyc_7no)">
+    <div id ="eghyc_7no" style="display:none">
+    Interval
+        <select id="eghyc_7intr">
+          <option value="12">Monthly</option>
+          <option value="4">Quaterly</option>
+          <option value="2">Half Yearly</option>
+          <option value="1">Anually</option>
+        </select>
+    Amount<input type="text" id="eghyc_7amt">
+    <button type="button" onclick="anualize(eghyc_7amt, eghyc_7intr), eghyc_7re()">Calculate Yearly</button>
+    <h1 id="eghyc_7stot"></h1>    
+    </div></h4>
+            
+  </div>
+  </div>
+    <br>    <br>
+    <div class="panel panel-default">
+        <div class="panel-body">
+    <h4> 
+    8     Equity Linked Savings Scheme.
+    <input type="checkbox" id="eghyc_8" value="0"  onclick="clicked(eghyc_8, eghyc_8no)">
+    <div id ="eghyc_8no" style="display:none">
+    Interval
+        <select id="eghyc_8intr">
+          <option value="12">Monthly</option>
+          <option value="4">Quaterly</option>
+          <option value="2">Half Yearly</option>
+          <option value="1">Anually</option>
+        </select>
+    Amount<input type="text" id="eghyc_8amt">
+    <button type="button" onclick="anualize(eghyc_8amt, eghyc_8intr), eghyc_8re()">Calculate Yearly</button>
+    <h1 id="eghyc_8stot"></h1>    
+    </div></h4>
+            
+  </div>
+  </div>
+    <br>    <br>
+    <div class="panel panel-default">
+        <div class="panel-body">
+    <h4> 
+    9     Sum paid to purchase deferred annuity
+    <input type="checkbox" id="eghyc_9" value="0"  onclick="clicked(eghyc_9, eghyc_9no)">
+    <div id ="eghyc_9no" style="display:none">
+    Interval
+        <select id="eghyc_9intr">
+          <option value="12">Monthly</option>
+          <option value="4">Quaterly</option>
+          <option value="2">Half Yearly</option>
+          <option value="1">Anually</option>
+        </select>
+    Amount<input type="text" id="eghyc_9amt">
+    <button type="button" onclick="anualize(eghyc_9amt, eghyc_9intr), eghyc_9re()">Calculate Yearly</button>
+    <h1 id="eghyc_9stot"></h1>    
+    </div></h4>
+            
+  </div>
+  </div>
+    <br>    <br>
+    <div class="panel panel-default">
+        <div class="panel-body">
+    <h4> 
+    10     Five year deposit scheme
+    <input type="checkbox" id="eghyc_10" value="0"  onclick="clicked(eghyc_10, eghyc_10no)">
+    <div id ="eghyc_10no" style="display:none">
+    Interval
+        <select id="eghyc_10intr">
+          <option value="12">Monthly</option>
+          <option value="4">Quaterly</option>
+          <option value="2">Half Yearly</option>
+          <option value="1">Anually</option>
+        </select>
+    Amount<input type="text" id="eghyc_10amt">
+    <button type="button" onclick="anualize(eghyc_10amt, eghyc_10intr), eghyc_10re()">Calculate Yearly</button>
+    <h1 id="eghyc_10stot"></h1>    
+    </div></h4>
+            
+  </div>
+  </div>
+    <br>    <br>
+    <div class="panel panel-default">
+        <div class="panel-body">
+    <h4> 
+    11    Senior Citizens savings scheme
+    <input type="checkbox" id="eghyc_11" value="0"  onclick="clicked(eghyc_11, eghyc_11no)">
+    <div id ="eghyc_11no" style="display:none">
+    Interval
+        <select id="eghyc_11intr">
+          <option value="12">Monthly</option>
+          <option value="4">Quaterly</option>
+          <option value="2">Half Yearly</option>
+          <option value="1">Anually</option>
+        </select>
+    Amount<input type="text" id="eghyc_11amt">
+    <button type="button" onclick="anualize(eghyc_11amt, eghyc_11intr), eghyc_11re()">Calculate Yearly</button>
+    <h1 id="eghyc_11stot"></h1>    
+    </div></h4>
+            
+  </div>
+  </div>
+    <br>    <br>
+    <div class="panel panel-default">
+        <div class="panel-body">
+    <h4> 
+    12   Subscription to notified securities/notified deposits scheme
+    <input type="checkbox" id="eghyc_12" value="0"  onclick="clicked(eghyc_12, eghyc_12no)">
+    <div id ="eghyc_12no" style="display:none">
+    Interval
+        <select id="eghyc_12intr">
+          <option value="12">Monthly</option>
+          <option value="4">Quaterly</option>
+          <option value="2">Half Yearly</option>
+          <option value="1">Anually</option>
+        </select>
+    Amount<input type="text" id="eghyc_12amt">
+    <button type="button" onclick="anualize(eghyc_12amt, eghyc_12intr), eghyc_12re()">Calculate Yearly</button>
+    <h1 id="eghyc_12stot"></h1>    
+    </div></h4>
+            
+  </div>
+  </div>
+    <br>    <br>
+    <div class="panel panel-default">
+        <div class="panel-body">
+    <h4> 
+    13  Contribution to notified Pension Fund set up by Mutual Fund or UTI.
+    <input type="checkbox" id="eghyc_13" value="0"  onclick="clicked(eghyc_13, eghyc_13no)">
+    <div id ="eghyc_13no" style="display:none">
+    Interval
+        <select id="eghyc_13intr">
+          <option value="12">Monthly</option>
+          <option value="4">Quaterly</option>
+          <option value="2">Half Yearly</option>
+          <option value="1">Anually</option>
+        </select>
+    Amount<input type="text" id="eghyc_13amt">
+    <button type="button" onclick="anualize(eghyc_13amt, eghyc_13intr), eghyc_13re()">Calculate Yearly</button>
+    <h1 id="eghyc_13stot"></h1>    
+    </div></h4>
+            
+  </div>
+  </div>
+    <br>    <br>
+    <div class="panel panel-default">
+        <div class="panel-body">
+    <h4> 
+    14     Subscription to Home Loan Account scheme of the National Housing Bank
+    <input type="checkbox" id="eghyc_14" value="0"  onclick="clicked(eghyc_14, eghyc_14no)">
+    <div id ="eghyc_14no" style="display:none">
+    Interval
+        <select id="eghyc_14intr">
+          <option value="12">Monthly</option>
+          <option value="4">Quaterly</option>
+          <option value="2">Half Yearly</option>
+          <option value="1">Anually</option>
+        </select>
+    Amount<input type="text" id="eghyc_14amt">
+    <button type="button" onclick="anualize(eghyc_14amt, eghyc_14intr), eghyc_14re()">Calculate Yearly</button>
+    <h1 id="eghyc_14stot"></h1>    
+    </div></h4>
+            
+  </div>
+  </div>
+    <br>    <br>
+    <div class="panel panel-default">
+        <div class="panel-body">
+    <h4> 
+    15   Subscription to deposit scheme of a public sector or company engaged in providing housing finance
+    <input type="checkbox" id="eghyc_15" value="0"  onclick="clicked(eghyc_15, eghyc_15no)">
+    <div id ="eghyc_15no" style="display:none">
+    Interval
+        <select id="eghyc_15intr">
+          <option value="12">Monthly</option>
+          <option value="4">Quaterly</option>
+          <option value="2">Half Yearly</option>
+          <option value="1">Anually</option>
+        </select>
+    Amount<input type="text" id="eghyc_15amt">
+    <button type="button" onclick="anualize(eghyc_15amt, eghyc_15intr), eghyc_15re()">Calculate Yearly</button>
+    <h1 id="eghyc_15stot"></h1>    
+    </div></h4>
+            
+  </div>
+  </div>
+    <br>    <br>
+    <div class="panel panel-default">
+        <div class="panel-body">
+    <h4> 
+    16     Contribution to notified annuity Plan of LIC
+    <input type="checkbox" id="eghyc_16" value="0"  onclick="clicked(eghyc_16, eghyc_16no)">
+    <div id ="eghyc_16no" style="display:none">
+    Interval
+        <select id="eghyc_16intr">
+          <option value="12">Monthly</option>
+          <option value="4">Quaterly</option>
+          <option value="2">Half Yearly</option>
+          <option value="1">Anually</option>
+        </select>
+    Amount<input type="text" id="eghyc_16amt">
+    <button type="button" onclick="anualize(eghyc_16amt, eghyc_16intr), eghyc_16re()">Calculate Yearly</button>
+    <h1 id="eghyc_16stot"></h1>    
+    </div></h4>
+            
+  </div>
+  </div>
+    <br>    <br>
+    <div class="panel panel-default">
+        <div class="panel-body">
+    <h4> 
+    17     Subscription to equity shares/ debentures of an approved eligible issue
+    <input type="checkbox" id="eghyc_17" value="0"  onclick="clicked(eghyc_17, eghyc_17no)">
+    <div id ="eghyc_17no" style="display:none">
+    Interval
+        <select id="eghyc_17intr">
+          <option value="12">Monthly</option>
+          <option value="4">Quaterly</option>
+          <option value="2">Half Yearly</option>
+          <option value="1">Anually</option>
+        </select>
+    Amount<input type="text" id="eghyc_17amt">
+    <button type="button" onclick="anualize(eghyc_17amt, eghyc_17intr), eghyc_17re()">Calculate Yearly</button>
+    <h1 id="eghyc_17stot"></h1>    
+    </div></h4>
+            
+  </div>
+  </div>
+    <br>    
+    <br>    
+    <div class="panel panel-default">
+        <div class="panel-body">
+    <h4> 
+    18     Subscription to notified bonds of NABARD
+    <input type="checkbox" id="eghyc_18" value="0"  onclick="clicked(eghyc_18, eghyc_18no)">
+    <div id ="eghyc_18no" style="display:none">
+    Interval
+        <select id="eghyc_18intr">
+          <option value="12">Monthly</option>
+          <option value="4">Quaterly</option>
+          <option value="2">Half Yearly</option>
+          <option value="1">Anually</option>
+        </select>
+    Amount<input type="text" id="eghyc_18amt">
+    <button type="button" onclick="anualize(eghyc_18amt, eghyc_18intr), eghyc_18re()">Calculate Yearly</button>
+    <h1 id="eghyc_18stot"></h1>    
+    </div></h4>
+            
+  </div>
+  </div>
+    <br>
+    <br>
+    <div id="submit">
+        <input class="btn btn-primary" type="submit" value="Save Data">
+    </div>
+    <p> </p>
+  </form> 
+</div>
+<footer class="site-footer" style="background-color:#f2f2f2;">
+    <div class="container">
+        <div class="row pt-5 mt-5 text-center">
+            <div class="col-md-12">
+                <p></p>
+                <p>
+                    This Website is Developed by Abhishek Mishra, Gulshan Sahu and M. Ram Gopal</a>
+
+                </p>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+
+</body>
+<script src="script/blockbck.js"></script>
+
+
+</html>
+

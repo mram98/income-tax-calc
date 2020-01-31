@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<head>
+    <title>
+        Income source identification page
+    </title>
+    <script src="script/incosrc.js"></script>
+    <script src="script/main.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src = "http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+
+</head>
+
+<body onload="clickCounter()">
+    <div class="jumbotron text-center">
+
+        <h2>Income Source Identification</h2>
+        <p>This page is collecting information regarding the various income sources.</p>
+        <p>Please fill the form carefully</p>
+
+    </div>
+    <div class="container">
+            <a href="index.html"> <button class="btn btn-warning" >Go Back</button></a>
+            <br>
+            <br>
+                    <p>* Please don't <mark>reload</mark> or <mark>back</mark> page .</p>
+        <p>* Please click Blue colored button before going to next page. To ensure your data is saved.</p>
+        <h2>Your Progress </h2>
+        <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width:20%">
+                20% Complete
+            </div>
+        </div>
+    </div>
+    <div class="container">
+
+        <h4 id="d1"></h4>
+
+        <form name="form1" method="POST" action="taxexem.html" onsubmit="return chekinfo()">
+            <h3>fill the details</h3><br>
+            <br>
+            <div class="panel panel-default">
+                    <div class="panel-body">
+            <h4> Other <input type="checkbox" id="oth1" value="0" onclick="clicked(oth1, oth1no)">
+            <div id="oth1no" style="display:none">
+                Interval
+                <select id="oth1intr">
+                    <option value="12">Monthly</option>
+                    <option value="4">Quaterly</option>
+                    <option value="2">Half Yearly</option>
+                    <option value="1">Anually</option>
+                </select>
+                Amount<input type="text" id="oth1amt">
+                <button type="button" onclick="anualize(oth1amt, oth1intr), oth1re()">Calculate Yearly</button>
+                <h1 id="oth1stot"></h1>
+            </div></h4>
+            
+</div>
+</div>
+            <br>
+            <br>
+            <div class="panel panel-default">
+                    <div class="panel-body">
+            <h4>Salary<input type="checkbox" id="slry1" value="1" onclick="clicked(slry1, slry1no)">
+            <div id="slry1no" style="display:none">
+                Interval
+                <select id="slry1intr">
+                    <option value="12">Monthly</option>
+                    <option value="4">Quaterly</option>
+                    <option value="2">Half Yearly</option>
+                    <option value="1">Anually</option>
+                </select>
+                Amount<input type="text" id="slry1amt">
+                <button type="button" onclick="anualize(slry1amt, slry1intr), slry1re()">Calculate Yearly</button>
+                <h1 id="slry1stot"></h1>
+            </div></h4>
+        </div>
+    </div>
+            <br>
+            <br>
+            <div class="panel panel-default">
+                    <div class="panel-body">
+            <h4>Pension<input type="checkbox" id="pnsn1" value="2" onclick="clicked(pnsn1, pnsn1no)">
+            <div id="pnsn1no" style="display:none">
+                Interval
+                <select id="pnsn1intr">
+                    <option value="12">Monthly</option>
+                    <option value="4">Quaterly</option>
+                    <option value="2">Half Yearly</option>
+                    <option value="1">Anually</option>
+                </select>
+                Amount<input type="text" id="pnsn1amt">
+                <button type="button" onclick="anualize(pnsn1amt, pnsn1intr), pnsn1re()">Calculate Yearly</button>
+                <h1 id="pnsn1stot"></h1>
+            </div></h4>
+        </div>
+    </div>
+            <br>
+            <br>
+            <div class="panel panel-default">
+                    <div class="panel-body">
+            <h4>Intrest Gain <input type="checkbox" id="ingain1" value="3" onclick="clicked(ingain1, ingain1no)">
+            <div id="ingain1no" style="display:none">
+                Interval
+                <select id="ingain1intr">
+                    <option value="12">Monthly</option>
+                    <option value="4">Quaterly</option>
+                    <option value="2">Half Yearly</option>
+                    <option value="1">Anually</option>
+                </select>
+                Amount<input type="text" id="ingain1amt">
+                <button type="button" onclick="anualize(ingain1amt, ingain1intr), ingain1re()">Calculate Yearly</button>
+                <h1 id="ingain1stot"></h1>
+            </div></h4>
+        </div>
+    </div>
+            <br>
+            <br>
+            <div class="panel panel-default">
+                    <div class="panel-body">
+            <h4> Dividend <input type="checkbox" id="dvnd1" value="4" onclick="clicked(dvnd1, dvnd1no)">
+            <div id="dvnd1no" style="display:none">
+                Interval
+                <select id="dvnd1intr">
+                    <option value="12">Monthly</option>
+                    <option value="4">Quaterly</option>
+                    <option value="2">Half Yearly</option>
+                    <option value="1">Anually</option>
+                </select>
+                Amount<input type="text" id="dvnd1amt">
+                <button type="button" onclick="anualize(dvnd1amt, dvnd1intr), dvnd1re()">Calculate Yearly</button>
+                <h1 id="dvnd1stot"></h1>
+            </div></h4>
+        </div>
+    </div>
+            <br>
+            <br>
+            <div class="panel panel-default">
+                    <div class="panel-body">
+            <h4>Lottery/ Betting <input type="checkbox" id="ltry1" value="5" onclick="clicked(ltry1, ltry1no)">
+            <div id="ltry1no" style="display:none">
+                Interval
+                <select id="ltry1intr">
+                    <option value="12">Monthly</option>
+                    <option value="4">Quaterly</option>
+                    <option value="2">Half Yearly</option>
+                    <option value="1">Anually</option>
+                </select>
+                Amount<input type="text" id="ltry1amt">
+                <button type="button" onclick="anualize(ltry1amt, ltry1intr), ltry1re()">Calculate Yearly</button>
+                <h1 id="ltry1stot"></h1>
+            </div></h4>
+        </div>
+    </div>
+            <br>
+            <br>
+            <div class="panel panel-default">
+                    <div class="panel-body">
+            <h4> Gift <input type="checkbox" id="gift1" value="6" onclick="clicked(gift1, gift1no)">
+            <div id="gift1no" style="display:none">
+                Interval
+                <select id="gift1intr">
+                    <option value="12">Monthly</option>
+                    <option value="4">Quaterly</option>
+                    <option value="2">Half Yearly</option>
+                    <option value="1">Anually</option>
+                </select>
+                Amount<input type="text" id="gift1amt">
+                <button type="button" onclick="anualize(gift1amt, gift1intr), gift1re()">Calculate Yearly</button>
+                <h1 id="gift1stot"></h1>
+            </div></h4>
+            
+        </div>
+    </div>
+            <br>
+            <br>
+            <div class="panel panel-default">
+                    <div class="panel-body">
+            <h4> Rental Income <input type="checkbox" id="rent1" value="7" onclick="clicked(rent1, rent1no)">
+            <div id="rent1no" style="display:none">
+                Interval
+                <select id="rent1intr">
+                    <option value="12">Monthly</option>
+                    <option value="4">Quaterly</option>
+                    <option value="2">Half Yearly</option>
+                    <option value="1">Anually</option>
+                </select>
+                Amount<input type="text" id="rent1amt">
+                <button type="button" onclick="anualize(rent1amt, rent1intr), rent1re()">Calculate Yearly</button>
+                <h1 id="rent1stot"></h1>
+            </div></h4>
+        </div>
+    </div>
+            <br>
+            <br>
+            <div class="panel panel-default">
+                    <div class="panel-body">
+            <h4> Capital Gains <input type="checkbox" id="cptl1" value="8" onclick="clicked(cptl1, cptl1no)">
+            <div id="cptl1no" style="display:none">
+                Interval
+                <select id="cptl1intr">
+                    <option value="12">Monthly</option>
+                    <option value="4">Quaterly</option>
+                    <option value="2">Half Yearly</option>
+                    <option value="1">Anually</option>
+                </select>
+                Amount<input type="text" id="cptl1amt">
+                <button type="button" onclick="anualize(cptl1amt, cptl1intr), cptl1re()">Calculate Yearly</button>
+                <h1 id="cptl1stot"></h1>
+            </div></h4>
+        </div>
+    </div>
+            <br>
+            <br>
+            <div class="panel panel-default">
+                    <div class="panel-body">
+            <h4> Business/ Proffesion <input type="checkbox" id="frel1" value="9" onclick="clicked(frel1, frel1no)">
+            <div id="frel1no" style="display:none">
+                Interval
+                <select id="frel1intr">
+                    <option value="12">Monthly</option>
+                    <option value="4">Quaterly</option>
+                    <option value="2">Half Yearly</option>
+                    <option value="1">Anually</option>
+                </select>
+                Amount<input type="text" id="frel1amt">
+                <button type="button" onclick="anualize(frel1amt, frel1intr), frel1re()">Calculate Yearly</button>
+                <h1 id="frel1stot"></h1>
+            </div></h4>
+            </div></div>
+            <br>
+            <br>
+            <div id="submit">
+                <input class="btn btn-primary" type="submit" value="Save Data">
+            </div>
+            <p> </p>
+
+
+        </form>
+    </div>
+
+
+
+    <footer class="site-footer" style="background-color:#f2f2f2;">
+        <div class="container">
+            <div class="row pt-5 mt-5 text-center">
+                <div class="col-md-12">
+                    <p></p>
+                    <p>
+                        This Website is Developed by Abhishek Mishra, Gulshan Sahu and M. Ram Gopal</a>
+
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+<script src="script/blockbck.js"></script>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Common Exemptions page
+    </title>
+    <script src="script/commexem.js"></script>
+    <script src="script/main.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src = "http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    
+    
+</head>
+<body onload="clickCounter()">
+  
+    <div class="jumbotron text-center">
+
+        <h2>Common Exemptions Page</h2>
+        <p>This page is index of Common Exemptions.</p>
+        <p>Please fill the form carefully</p>
+
+    </div>
+    <div class="container">
+        <a href="../index.html"> <button class="btn btn-warning">Go Back</button></a>
+        <br>
+        <br>
+        <a href="../taxexem.html"> <button class="btn btn-danger">Skip</button></a>
+        <p>* Please don't <mark>reload</mark> or <mark>back</mark> page .</p>
+        <p>* Please click Blue colored button before going to next page. To ensure your data is saved.</p>
+        <h2>Your Progress </h2>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width:35%">
+                35% Complete
+            </div>
+        </div>
+    </div>
+    <div class="container">
+
+
+<p id="d1"></p>
+
+<form name="form1" method="POST" action="../taxexem.html" onsubmit="return chekinfo()">
+  <h3>fill the details of Eligibility.</h3>
+  <br>
+  <div class="panel panel-default">
+      <div class="panel-body">
+  <h4>
+    Agricultural Income [Section 10(1)]
+    <input type="checkbox" id="ten_1" value="0"  onclick="clicked(ten_1, ten_1no)">
+    <div id ="ten_1no" style="display:none">
+    Interval
+        <select id="ten_1intr">
+          <option value="12">Monthly</option>
+          <option value="4">Quaterly</option>
+          <option value="2">Half Yearly</option>
+          <option value="1">Anually</option>
+        </select>
+    Amount<input type="text" id="ten_1amt">
+    <button type="button" onclick="anualize(ten_1amt, ten_1intr), ten_1re()">Calculate Yearly</button>
+    <h1 id="ten_1stot"></h1>    
+    </div>
+    </h4>            
+  </div>
+  </div>
+    <br>
+    <br>
+    <div class="panel panel-default">
+        <div class="panel-body">
+    <h4> 
+    Amount received by a member of the HUF from the income of the HUF [Section 10(2)]    
+    <input type="checkbox" id="ten_2" value="0"  onclick="clicked(ten_2, ten_2no)">
+    <div id ="ten_2no" style="display:none">
+    Interval
+        <select id="ten_2intr">
+          <option value="12">Monthly</option>
+          <option value="4">Quaterly</option>
+          <option value="2">Half Yearly</option>
+          <option value="1">Anually</option>
+        </select>
+    Amount<input type="text" id="ten_2amt">
+    <button type="button" onclick="anualize(ten_2amt, ten_2intr), ten_2re()">Calculate Yearly</button>
+    <h1 id="ten_2stot"></h1>    
+    </div>
+    </h4>            
+  </div>
+  </div>
+    <br>
+    <br>
+    <div class="panel panel-default">
+        <div class="panel-body">
+    <h4> 
+    Share of profit received by a partner from the firm [Section 10(2A)]
+    <input type="checkbox" id="ten_2a" value="0"  onclick="clicked(ten_2a, ten_2ano)">
+    <div id ="ten_2ano" style="display:none">
+    Interval
+        <select id="ten_2aintr">
+          <option value="12">Monthly</option>
+          <option value="4">Quaterly</option>
+          <option value="2">Half Yearly</option>
+          <option value="1">Anually</option>
+        </select>
+    Amount<input type="text" id="ten_2aamt">
+    <button type="button" onclick="anualize(ten_2aamt, ten_2aintr), ten_2are()">Calculate Yearly</button>
+    <h1 id="ten_2astot"></h1>    
+    </div>
+    </h4>            
+  </div>
+  </div>
+    <br>
+    <br>
+    <div class="panel panel-default">
+        <div class="panel-body">
+    <h4> 
+    Interest to non-residents [Section 10(4)]
+    <input type="checkbox" id="ten_4" value="0"  onclick="clicked(ten_4, ten_4no)">
+    <div id ="ten_4no" style="display:none">
+    Interval
+        <select id="ten_4intr">
+          <option value="12">Monthly</option>
+          <option value="4">Quaterly</option>
+          <option value="2">Half Yearly</option>
+          <option value="1">Anually</option>
+        </select>
+    Amount<input type="text" id="ten_4amt">
+    <button type="button" onclick="anualize(ten_4amt, ten_4intr), ten_4re()">Calculate Yearly</button>
+    <h1 id="ten_4stot"></h1>    
+    </div>
+    </h4>            
+  </div>
+  </div>
+    <br>
+    <br>
+    <div class="panel panel-default">
+        <div class="panel-body">
+    <h4> 
+    Interest on notified savings certificates [Section 10(4B)]
+    <input type="checkbox" id="ten_4b" value="0"  onclick="clicked(ten_4b, ten_4bno)">
+    <div id ="ten_4bno" style="display:none">
+    Interval
+        <select id="ten_4bintr">
+          <option value="12">Monthly</option>
+          <option value="4">Quaterly</option>
+          <option value="2">Half Yearly</option>
+          <option value="1">Anually</option>
+        </select>
+    Amount<input type="text" id="ten_4bamt">
+    <button type="button" onclick="anualize(ten_4bamt, ten_4bintr), ten_4bre()">Calculate Yearly</button>
+    <h1 id="ten_4bstot"></h1>    
+    </div>
+    </h4>            
+  </div>
+  </div>
+    <br>
+    <br>
+    <div class="panel panel-default">
+        <div class="panel-body">
+    <h4> 
+    Leave travel concession [Section 10(5)]
+    <input type="checkbox" id="ten_5" value="0"  onclick="clicked(ten_5, ten_5no)">
+    <div id ="ten_5no" style="display:none">
+    Interval
+        <select id="ten_5intr">
+          <option value="12">Monthly</option>
+          <option value="4">Quaterly</option>
+          <option value="2">Half Yearly</option>
+          <option value="1">Anually</option>
+        </select>
+    Amount<input type="text" id="ten_5amt">
+    <button type="button" onclick="anualize(ten_5amt, ten_5intr), ten_5re()">Calculate Yearly</button>
+    <h1 id="ten_5stot"></h1>    
+    </div>
+    </h4>            
+  </div>
+  </div>
+    <br>
+    <br>
+    <div class="panel panel-default">
+        <div class="panel-body">
+    <h4> 
+    Amount paid on life insurance policy [Section 10(10D)]
+    <input type="checkbox" id="ten_10d" value="0"  onclick="clicked(ten_10d, ten_10dno)">
+    <div id ="ten_10dno" style="display:none">
+    Interval
+        <select id="ten_10dintr">
+          <option value="12">Monthly</option>
+          <option value="4">Quaterly</option>
+          <option value="2">Half Yearly</option>
+          <option value="1">Anually</option>
+        </select>
+    Amount<input type="text" id="ten_10damt">
+    <button type="button" onclick="anualize(ten_10damt, ten_10dintr), ten_10dre()">Calculate Yearly</button>
+    <h1 id="ten_10dstot"></h1>    
+    </div>
+    </h4>            
+  </div>
+  </div>
+    <br>
+    <br>
+    <div class="panel panel-default">
+        <div class="panel-body">
+    <h4> 
+    Payment from approved superannuation fund in specified circumstances and subject to certain limits [Section 10(13)]
+    <input type="checkbox" id="ten_13" value="0"  onclick="clicked(ten_13, ten_13no)">
+    <div id ="ten_13no" style="display:none">
+    Interval
+        <select id="ten_13intr">
+          <option value="12">Monthly</option>
+          <option value="4">Quaterly</option>
+          <option value="2">Half Yearly</option>
+          <option value="1">Anually</option>
+        </select>
+    Amount<input type="text" id="ten_13amt">
+    <button type="button" onclick="anualize(ten_13amt, ten_13intr), ten_13re()">Calculate Yearly</button>
+    <h1 id="ten_13stot"></h1>    
+    </div>
+    </h4>            
+  </div>
+  </div>
+    <br>
+    <br>
+    <div class="panel panel-default">
+        <div class="panel-body">
+    <h4> 
+    Allowances for meeting business expenditure [Section 10(14)]
+    <input type="checkbox" id="ten_14" value="0"  onclick="clicked(ten_14, ten_14no)">
+    <div id ="ten_14no" style="display:none">
+    Interval
+        <select id="ten_14intr">
+          <option value="12">Monthly</option>
+          <option value="4">Quaterly</option>
+          <option value="2">Half Yearly</option>
+          <option value="1">Anually</option>
+        </select>
+    Amount<input type="text" id="ten_14amt">
+    <button type="button" onclick="anualize(ten_14amt, ten_14intr), ten_14re()">Calculate Yearly</button>
+    <h1 id="ten_14stot"></h1>    
+    </div>
+    </h4>            
+  </div>
+  </div>
+    <br>
+    <br>
+    <div id="submit">
+        <input class="btn btn-primary" type="submit" value="Save Data">
+    </div>
+    <p> </p>
+  </form> 
+</div>
+<footer class="site-footer" style="background-color:#f2f2f2;">
+    <div class="container">
+        <div class="row pt-5 mt-5 text-center">
+            <div class="col-md-12">
+                <p></p>
+                <p>
+                    This Website is Developed by Abhishek Mishra, Gulshan Sahu and M. Ram Gopal</a>
+
+                </p>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+
+</body>
+<script src="script/blockbck.js"></script>
+
+
+</html>
+

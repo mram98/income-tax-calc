@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<head>
+  <title>
+    Basic information form
+  </title>
+  <script src="script/baseinfo.js"></script>
+  <script src="script/main.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src = "http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+</head>
+
+<body>
+  <div class="jumbotron text-center">
+
+    <h2>Basic Information</h2>
+    <p>This page is collecting basic information for this project.</p>
+    <p>Please fill the form carefully</p>
+
+  </div>
+
+
+  <div class="container">
+
+  
+      
+        <button id="button-skip " class="btn btn-warning" onclick="return went3()">Go Back</button>
+     
+     
+        
+
+      
+  
+
+
+    <br>
+    <br>
+
+    <p>* Please don't <mark>reload</mark> or <mark>back</mark> page .</p>
+    <p>* Please click Blue colored button before going to next page. To ensure your data is saved.</p>
+    <h2>Your Progress </h2>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width:5%">
+        5% Complete
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <form name="form1" method="POST" action="incosrc.html" onsubmit="return chekinfo()">
+      <h3>fill the details</h3>
+      <div class="panel panel-default">
+          <div class="panel-body">
+      <h4>Complete Name:
+        <input type="text" id="name1"></h4>
+      <br>
+
+      <h4>Age:
+        <select id="age1">
+          <option value="10">Less Then 18 years but less than 1 year</option>
+          <option value="18" selected>More Than 18 years but less than 60 years</option>
+          <option value="60">More Than 60 years but less than 80 years</option>
+          <option value="80">More Than 80 years but less than 100 years</option>
+        </select>
+      </h4>
+      <br>
+
+      <h4>Proffesion:
+        <select id="prof1">
+          <option value="0">None</option>
+          <option value="1" selected>Others</option>
+          <option value="2">Doctor</option>
+          <option value="3">Freelancer</option>
+          <option value="4">Pensioner</option>
+          <option value="5">Employee</option>
+        </select>
+      </h4>
+
+      <br>
+      <h4>
+        Residence status:
+        <select id="res1">
+          <option value="0">None</option>
+          <option value="1" selected>Indian</option>
+          <option value="2">N.R.I.</option>
+        </select>
+      </h4>
+
+      <br>
+      <h4>Type of user:
+        <select id="user1">
+          <option value="0">None</option>
+          <option value="1" selected>Hindu undivided family / Individual</option>
+          <option value="2">Association of peoples</option>
+          <option value="3">Body of individuals</option>
+          <option value="4">Partnership firm / LLP</option>
+          <option value="5">local Authorities / Entity</option>
+          <option value="6">Domestic entity company</option>
+          <option value="7">Foriegn Company</option>
+          <option value="8">Agricultural society / self help group</option>
+          <option value="9">Cooperative society</option>
+        </select>
+      </h4>
+      <br>
+      <h4>Assesment Year:
+        <select id="yer1">
+          <option value="0">Other</option>
+          <option value="1" selected>2019-2020</option>
+        </select>
+      </h4>
+
+      <br>
+      <h4>Enter correct data and click bellow button</h4>
+      <div>     <button id="button-skip " class="btn btn-danger" onclick="return went4()">Skip </button>
+      </div>
+ 
+      <br>
+      <div id="submit">
+        <input class="btn btn-primary" type="submit" value="Save Data">
+      </div>
+      </div>
+      </div>
+
+
+      <p> </p>
+
+    </form>
+  </div>
+  <footer class="site-footer" style="background-color:#f2f2f2;">
+    <div class="container">
+      <div class="row pt-5 mt-5 text-center">
+        <div class="col-md-12">
+          <p></p>
+          <p>
+            This Website is Developed by Abhishek Mishra, Gulshan Sahu and M. Ram Gopal</a>
+
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+<script src="script/blockbck.js"></script>
+</html>

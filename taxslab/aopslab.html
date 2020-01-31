@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Assosiatio of people slab
+    </title>
+    <script src="script/aopslab.js"></script>
+</head>
+<body>
+<h2>HTML Forms</h2>
+<p>this page is aop slab page for this project hence it initlize the process .</p>
+<p>please fill the form for details</p>
+<p>* Please don't reload or back page .</p>
+<p>* Please click SUBMIT button before going to next page. To ensure your data is saved.</p>
+
+    Complete Name:<br>
+    <br>
+    <button onclick="return act1()">Fill Data</button><br>
+    <br>
+    fill the details<br>
+    
+    <p>Total Incom from all sources</p>
+    <p id ="totalincome"></p>
+    <br>
+    <p>Total Exemptions declared</p>
+    <p id = "exempt">Exemption</p>
+    <p>Total Deductions declared</p>
+    <p id = "deduct">Deduction</p>
+    <p>Total Cut-off's</p>
+    <p id ="totalcutoff"></p>
+    <br>
+    <p>Gross Income</p>
+    <p id = "grossincome">gross income</p>
+    <button onclick="return act2()">Process Slab</button>
+    <p>Slab 1 (Upto 2,50,000- NILL)</p>
+    <P id = "slab1">nill</P>
+    <p>Slab 2 (2,50,001 to  5,00,000 - 5%)</p>
+    <P id = "slab2">nill</P>
+    <p>Slab 3 (5,00,001 to 10,00,000 - 20%)</p>
+    <P id = "slab3">nill</P>
+    <p>Slab 4 (10,00,001 above - 30%)</p>
+    <P id = "slab4">nill</P>
+    <div>Total = <h5 id="totalslab"></h5></div>
+    <div>
+        Surcharge = <h5 id="sur">here</h5>
+    </div>
+    <div>
+        Educational Cess = <h5 id="educess">here</h5>
+    </div>
+    <div>
+        Secondrary and higher educational cess = <h5 id="shecess">here</h5>
+    </div>
+    <div>
+        Total Tax after surcharges and cess = <h5 id="totaltax">here</h5>
+    </div>
+
+
+    <br>
+   The above data is the output. Save the Data to generate the report.<br>
+   
+   <button onclick="return act3()">Save Data</button>
+  
+ 
+
+</body>
+
+
+</html>
+

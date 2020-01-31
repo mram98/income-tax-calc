@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<head>
+    <title>
+        Tax Exemption calculation page
+    </title>
+    <script src="script/taxexem.js"></script>
+    <script src="script/main.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src = "http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+
+</head>
+
+<body onload="clickCounter()">
+    <div class="jumbotron text-center">
+
+        <h2>Exemptions Main Page</h2>
+        <p>This page is index of exemption's.</p>
+        <p>Please fill the form carefully</p>
+
+    </div>
+    <div class="container">
+        <a href="index.html"> <button class="btn btn-warning">Go Back</button></a>
+        <br>
+        <br>
+
+        <p>* Please don't <mark>reload</mark> or <mark>back</mark> page .</p>
+        <p>* Please click Blue colored button before going to next page. To ensure your data is saved.</p>
+        <h2>Your Progress </h2>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width:35%">
+                35% Complete
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h4>
+
+            <p id="d1"></p>
+            <p id="d2"></p>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div id="button-skip ">
+                        <button class="btn btn-danger" onclick="return went4()">Skip Exemption</button>
+                    </div>
+                    <div id="button">
+                        <button class="btn btn-success" onclick="return went1()">Go common Exemptions</button>
+                    </div>
+                    <div id="d3"></div>
+                    <div id="button">
+                        <button class="btn btn-success" onclick="return went2()">Go other Exemptions</button>
+                    </div>
+                    <div id="d4"></div>
+                    <div id="button">
+                        <button class="btn btn-primary" onclick="return went3()">Go to Deductions</button>
+                    </div>
+        </h4>
+    </div>
+    </div>
+    </div>
+
+
+    <footer class="site-footer" style="background-color:#f2f2f2;">
+        <div class="container">
+            <div class="row pt-5 mt-5 text-center">
+                <div class="col-md-12">
+                    <p></p>
+                    <p>
+                        This Website is Developed by Abhishek Mishra, Gulshan Sahu and M. Ram Gopal</a>
+
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+<script src="script/blockbck.js"></script>
+</html>

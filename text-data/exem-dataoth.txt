@@ -1,0 +1,123 @@
+<br>
+    Agricultural Income [Section 10(1)]
+    <input type="checkbox" id="ten_" value="0"  onclick="clicked(ten_, ten_no)">
+    <div id ="ten_no" style="display:none">
+    Interval
+        <select id="ten_intr">
+          <option value="12">Monthly</option>
+          <option value="4">Quaterly</option>
+          <option value="2">Half Yearly</option>
+          <option value="1">Anually</option>
+        </select>
+    Amount<input type="text" id="ten_amt">
+    <button type="button" onclick="anualize(ten_amt, ten_intr), ten_re()">Calculate Yearly</button>
+    <h1 id="ten_stot"></h1>    
+    </div>
+    <br> 
+
+    
+-------------------------------------selected others------------------------------------------
+
+Compensation for Bhopal Gas Leak Disaster [Section 10(10BB)]
+Compensation on account of any disaster [Section 10(10BC)]
+Payment at the time of voluntary retirement [Section 10(10C)]
+Tax on perquisites paid by the employer [Section 10(10CC)]
+Payment from account opened in accordance with the Sukanya Samriddhi Account Rules, 2014 [Section 10(11A)]
+Partial withdrawal from NPS [Section 10(12B)]
+Pension to gallantry award winner [Section 10(18)]
+Income of mutual fund [Section 10(23D)]
+Income of provident fund [Section 10(25)]
+Income of Minor [Section 10(32)]
+
+
+-----------------------------------------------all---------------------------------------------
+
+Agricultural Income [Section 10(1)]
+Amount received by a member of the HUF from the income of the HUF [Section 10(2)]
+Share of profit received by a partner from the firm [Section 10(2A)]
+Interest to non-residents [Section 10(4)]
+Interest on notified savings certificates [Section 10(4B)]
+Leave travRemuneration received by specified diplomats and their staff [Section 10(6)(ii)]
+
+Salary of a foreign employee and non-resident member of crew [Section 10(6)(vi), (viii)]
+
+Remuneration of a foreign trainee [Section 10(6)(xi)]
+
+Tax paid on behalf of foreign company deriving income by way of royalty or fees for technical
+services [Section 10(6A)]
+
+Tax paid on behalf of foreign company or non-resident in respect of other income [Section
+10(6B)]
+
+Tax paid on behalf of foreign Government or foreign enterprise deriving income by way of
+lease of aircraft or aircraft engine [Section 10(6BB)]
+
+Technical fees received by a notified foreign company [Section 10(6C)]
+
+Allowance/perquisites to Government employee outside India [Section 10(7)]
+
+Income of foreign Government employee under co-operative technical assistance programme [Section 10(8)]
+
+Remuneration or fees received by a non-resident consultant/its foreign employees [Section 10(8A), (8B)]
+
+Income of a family member of an employee serving under co-operative technical assistance programme [Section 10(9)]
+
+Compensation for Bhopal Gas Leak Disaster [Section 10(10BB)]
+
+Compensation on account of any disaster [Section 10(10BC)]
+
+Payment at the time of voluntary retirement [Section 10(10C)]
+
+Tax on perquisites paid by the employer [Section 10(10CC)]
+
+Amount paid on life insurance policy [Section 10(10D)]
+
+Payment from account opened in accordance with the Sukanya Samriddhi Account Rules, 2014 [Section 10(11A)]
+
+Partial withdrawal from NPS [Section 10(12B)]
+
+Payment from approved superannuation fund in specified circumstances and subject to certain limits [Section 10(13)]
+
+Allowances for meeting business expenditure [Section 10(14)]
+
+Interest Incomes [Section 10(15)]
+
+Lease rent of an aircraft [Section 10(15A)]
+
+Educational scholarship [Section 10(16)]
+
+Daily allowance to a Member of Parliament [Section 10(17)]
+
+• Any Constituency allowance received by a Member of State Legislature. Awards [Section 10(17A)]
+Pension to gallantry award winner [Section 10(18)]
+Family pension received by the family members of armed forces [Section 10(19)]
+Income of a news agency [Section 10(22B)]
+Income of a professional association [Section 10(23A)]
+Income received on behalf of Regimental Fund [Section 10(23AA)]
+Income of a fund established for welfare of employees [Section 10(23AAA)]
+Income of pension fund [Section 10(23AAB)]
+Income from Khadi or village industry [Section 10(23B)]
+Income of Hospital [Section 10(23C)]
+Income of mutual fund [Section 10(23D)]
+Income of notified investor protection fund [Section 10(23EA)]
+Income of the notified investor protection fund set-up by commodity exchange [Section 10(23EC)]
+Income of Investor Protection Fund set by a depository [Section 10(23ED)]
+Income of a venture capital fund or a venture capital company from investment in a venture capital undertaking [Section 10(23FB)]
+Income of an investment fund [Section 10(23FBA)]
+Income of a registered trade union [Section 10(24)]
+Income of provident fund [Section 10(25)]
+Income of the Employees’ State Insurance Fund [Section 10(25A)]
+Income of a member of a Scheduled Tribe [Section 10(26)]
+Income of Minor [Section 10(32)]
+Dividends and interest on units [Section 10(34)/ (35)]
+Income from international sporting event [Section 10(39)]
+Income received as grant by a subsidiary company [Section 10(40)]
+Income from transfer of asset of an undertaking engaged in the business of generation,transmission or distribution of power [Section 10(41)]
+Income of a body or authority set up by two countries [Section 10(42)]
+Reverse Mortgage [Section 10(43)]
+New Pension System Trust [Section 10(44)]
+Exemption of Allowance or perquisite to chairman/member of UPSC [Section 10 (45)]
+Exemption of ‘specified income’ of certain bodies or authorities [Section 10(46)]
+Exemption of Income of notified ‘Infrastructure debt fund’ [Section 10(47)]
+Exemption of Income of a foreign company from sale of Crude Oil in India [Section 10 (48)]
+Exemption of income of National Financial Holdings Company [Section 10(49)]

@@ -1,0 +1,78 @@
+80CCC	For amount deposited in annuity plan of LIC or any other insurer for a pension from a fund referred to in Section 10(23AAB)	-
+80CCD(1)	Employee’s contribution to NPS account (maximum up to Rs 1,50,000)	-
+80CCD(2)	Employer’s contribution to NPS account	Maximum up to 10% of salary
+80CCD(1B)	Additional contribution to NPS	Rs. 50,000
+80TTA(1)	Interest Income from Savings account	Maximum up to 10,000
+80TTB	Exemption of interest from banks, post office, etc. Applicable only to senior citizens	Maximum up to 50,000
+80GG	For rent paid when HRA is not received from employer	Least of :
+– Rent paid minus 10% of total income
+– Rs. 5000/- per month
+– 25% of total income
+80E	Interest on education loan	Interest paid for a period of 8 years
+80EE	Interest on home loan for first time home owners	Rs 50,000
+80CCG	Rajiv Gandhi Equity Scheme for investments in Equities	Lower of
+- the gross total income of the assessee shall not exceed twelve lakh rupees;
+– 50% of amount invested in equity shares; or
+– Rs 25,000
+80D	Medical Insurance – Self, spouse, children
+Medical Insurance – Parents more than 60 years old or (from FY 2015-16) uninsured parents more than 80 years old	– Rs. 25,000
+– Rs. 50,000
+80DD	Medical treatment for handicapped dependent or payment to specified scheme for maintenance of handicapped dependent
+– Disability is 40% or more but less than 80%
+– Disability is 80% or more	– Rs. 75,000
+– Rs. 1,25,000
+80DDB	Medical Expenditure on Self or Dependent Relative for diseases specified in Rule 11DD
+– For less than 60 years old
+– For more than 60 years old	– Lower of Rs 40,000 or the amount actually paid
+– Lower of Rs 1,00,000 or the amount actually paid
+80U	Self-suffering from disability :
+– An individual suffering from a physical disability (including blindness) or mental retardation.
+– An individual suffering from severe disability	– Rs. 75,000
+– Rs. 1,25,000
+80GGB	Contribution by companies to political parties	Amount contributed (not allowed if paid in cash)
+80GGC	Contribution by individuals to political parties	Amount contributed (not allowed if paid in cash)
+80RRB	Deductions on Income by way of Royalty of a Patent	Lower of Rs 3,00,000 or income received
+80CCF   Deduction in respect of subscription to long-term infrastructure bonds
+80G     Deduction in respect of donations to certain funds, charitable institutions, etc.
+80GGA   Deduction in respect of certain donations for scientific research or rural development.
+80GGC   Deduction in respect of contributions given by any person to political parties.
+80HH.   Deduction in respect of profits and gains from newly established industrial undertakings or hotel business in backward areas.
+80HHA   Deduction in respect of profits and gains from newly established small-scale industrial undertakings in certain areas.
+
+
+
+
+
+
+
+
+
+
+
+
+Eligibility to Claim Rebate Under Section 87A FY 2019-20 (AY 2020-21)
+You can claim tax rebate under this provision if you meet the following conditions:
+You must be a RESIDENT INDIVIDUAL; and
+Your Total Income after Deductions (under Section 80) doesn’t exceed Rs 5 lakh.
+The rebate is limited to Rs 12,500.
+This means that if the total tax payable is lower than Rs 12,500, then that amount will be the rebate under section 87A.
+This rebate is applied to the total tax before adding the Education Cess (4%).
+
+
+
+
+
+
+
+80CCG	Rajiv Gandhi Equity Scheme for investments in Equities
+80D	    Medical Insurance – Self, spouse, children
+80DD	Medical treatment for handicapped dependent 
+80DDB	Medical Expenditure on Self or Dependent Relative for diseases
+80E  	Interest on education loan	Interest paid for a period of 8 years
+80EE	Interest on home loan for first time home owners	Rs 50,000
+80GG	For rent paid when HRA is not received from employer
+80GGB	Contribution by companies to political parties	Amount contributed
+80RRB	Deductions on Income by way of Royalty of a Patent	Lower of Rs 3,00,000 or income received
+80TTA	Interest Income from Savings account	Maximum up to 10,000
+80TTB	Exemption of interest from banks, post office, etc. Applicable only to senior citizens	Maximum up to 50,000
+80U	    Self-suffering from disability
